@@ -1,4 +1,5 @@
 const winston = require('winston');
+const multer = require('multer');
 const express = require('express');
 const app = express();
 
@@ -6,10 +7,7 @@ require('./startup/routes')(app);
 require('./startup/db')();
 
 
- 
-
-
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 4000;
 
 const server = app.listen(port,() => winston.info(`Listening the port ${port}...`));
 

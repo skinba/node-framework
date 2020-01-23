@@ -45,6 +45,5 @@ exports.updateoneaccount = async(req=null,res=null,next=null) => {
 exports.removeaccount = async(req=null,res=null,next=null) => {
     
     const removeoneaccount = await ACCOUNTDATA.findByIdAndRemove(req.params.id);
-
     return res.send(removeoneaccount);
 }
