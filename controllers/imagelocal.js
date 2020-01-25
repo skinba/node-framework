@@ -1,6 +1,7 @@
 const IMAGELOCAL = require('../models/imagelocal');
 const _ = require('lodash');
 
+
 exports.createimg = async (req=null,res=null,next=null) => {
     console.log(req.files);
     const imageData = {
